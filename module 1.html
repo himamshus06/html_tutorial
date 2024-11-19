@@ -1,0 +1,133 @@
+<!-- what youre seeing here is a comment(multi-line comment in this case), used by developers to write 
+ desriptions or any other info that can be utilised by other developers to understand existing code
+ or update it as per needs.-->
+
+
+
+<!-- this line tells the browser that this document utlises rules of a particular version of html  (html5 in this case) -->
+<!DOCTYPE html>
+
+<!-- this is where everything actually starts. entire html is a huge container that has other containers in it. All marked
+ by 'markup' tags("<tagname>"), hence the name hypertext markup language (html). Hypertexts are basically links-->
+<html>
+
+<!-- this is the head section where all the formalities happen like giving the title of the document or
+ linking a css file(externally, for versatility) or a javascript file(for backend stuff) or other things that link this document 
+ with an external source. Now beware, these links are not for the viewer. These links are to get the website up and running as youd
+ like it to -->
+<head>
+    <title>Module 1</title>
+
+    <!-- for now dont worry about this style element -->
+    <style>
+        *{
+            font-family: sans-serif;
+            
+        }
+
+
+        .container{
+            width: 70%;
+            height: 60rem;
+            background-color: aqua;
+            margin:10% auto;
+            padding: 20px;
+            border-radius: 20px;
+        }
+
+        .html{
+            width: 90%;
+            height:50rem;
+            background-color: aquamarine;
+            padding: 15px;
+        }
+
+        .head{
+            width: 90%;
+            height:15rem;
+            background-color:brown;
+            margin: 15px;
+            padding: 15px;
+        }
+        .body{
+            width: 90%;
+            height:15rem;
+            background-color:blueviolet;
+            margin: 15px;
+            padding: 15px;
+        }
+
+        .img_container{
+            width: 70%;
+            margin: auto;
+        }
+
+        .text{
+            width: 70%;
+            margin: auto;
+            overflow: scroll;
+        }
+
+    </style>
+</head>
+
+<!-- This where everything to be displayed happens -->
+<body>
+    <!-- from here ill write code that you need not worry about. this code is for the webpage to appear not for you
+     to learn from -->
+
+    <div class="text">
+        <img src="images/boilerplate.png" alt="">
+
+        <p>This (above) is the basic structure of any html document called an 'html boilerplate'. An html document is as normal as any other document.
+           Except html documents are translated by browsers (like chrome)from code to an output, called a webpage. 
+           A collection of webpages is a website</p>
+           <hr><br><br>
+   <img src="images/comment.png" alt="">
+   <hr><br><br>
+<img src="images/img1.png" alt="">
+   <p></p>
+    </div>
+     <div class="container">
+        <h1>This is an html document visualised</h1>
+        <div class="html">
+            <h2>Html (parent element; big guy)
+            </h2>
+
+          <p>  inside this head and body will reside like so</p>
+            <div class="head">
+                <h2>head</h2>
+                <p>head will have all the things that will help body keep its children(contents within it) sane</p>
+                <ul>
+                    <li>im a link to external css</li>
+                    <li>im a link to javascript</li>
+                    <li>im a link to a server from which all the icons in the body will be loaded</li>
+                    <li>i tell the search engine about me(meta tag)</li>
+                </ul>
+            </div>
+            <div class="body">
+                <h2>body</h2>
+                <p>i will have everything that needs to be shown to the world; like the code that is letting you see how im built
+                </p>
+                <p>
+                    btw without css ill look like This
+                </p>
+                
+            </div>
+        </div>
+
+     </div>
+
+     <div class="img_container">
+        <h1 style="background-color:yellow ;">without css</h1><hr><br><br>    
+        <img src="images/wocss.png" alt="without css" >
+     </div>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/prism.min.js"></script>
+</body>
+</html>
+
+
+
+
+
+
