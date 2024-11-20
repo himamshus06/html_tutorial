@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Basics</title>
+    <style>
+
+*{
+margin: 0;
+padding: 0;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+
+.container{
+    width: 70%;
+    background-color: blanchedalmond;
+    margin: 10% auto;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+
+.element_selector .para p{
+background-color: yellow;
+}
+
+.class p{
+    background-color: aqua;
+}
+
+#idname{
+background-color: blue;
+color: white;
+}
+
+.caution{
+    background-color: yellow;
+}
+
+.backHome{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: black;
+    color: white;
+    padding: 2rem;
+    border-radius: 50%;}
+    </style>
+
+</head>
+<body id="home">
+    
+   
+    <div class="container" style="overflow: scroll;" >
+        
+        <h1 style="margin: 20px;" >CSS - Cascading Style Sheets</h1><hr><br>
+        <p>
+            Yesterday, you saw an example to see the importance of css. without css the website is just bland and sad. Css is basically stylesheets that give style and beauty to sad html elements. Cascading refers to how css properties are applied based on their priorities. More on that later.
+            <br><br>
+            There are 3 ways to use css. (Why three three ways? it is useful actually. Helps with overwriting unwanted styles for individual elements)<br><br>
+
+            <ol>
+                <li>External CSS: Create a css file (outside html document) and save it with '.css' extension. Like: "filename.css". Then link it to ur html document in the head section (how? we'll see later). btw here the stylesheet is named style.css and its linked using the &lt;link&gt; tag<br><br></li>
+                <img src="images/external css.png" alt="">
+               <br> <li>Internal CSS: use the  &lt;style&gt; css stuff &lt;/style&gt; tag in the head section. In this image you can see the style tag and css being defined within style tag. The style tag is in the head section. </li>
+              <br><br> <img src="images/internal css.png" style="height: 500px;">
+               <br> <li>Inline CSS: use the style as attribute in html elements like: <br>
+                    &lt;p atrribute_name = "attribute value"&gt; text &lt;/p&gt; <br><br>
+                    or, in this case, <br><br>
+                    &lt;img style = "css stuff"&gt;  <br><br>
+                    btw img tag is used to put images into the webpage. Later we'll see about it
+                </li>
+                <br><br><img src="images/inline css.png" alt="">
+            </ol>
+
+            <br><br><hr>
+            In external and internal css, we use "selectors" to select a particular element that we wanna edit and beautify. Selectors can be either elements themselves, like h1, p, div, that select all the content placed within any number of these selected tags, OR class names OR ID names. The syntax (format) to use css is, (in external css) <br><br>
+            selector{<br>
+                properties;<br>
+            }
+
+            <br><br>
+            <div class="element_selector" >
+                <h1>element selector</h1><hr><br>
+                <p>here im applying certain style to the "p" elements by using element selector 'p'. <br>
+                the code would be: <br><br>
+                p{ <br>
+                    background-color: yellow; <br>
+                } <br><br>
+                </p>
+                <div class="para">
+                    <h1>h1 tag</h1>
+                    <p>para 1</p>
+                <p>para 2</p>
+                <p>para 3</p>
+                </div> <br><br>
+                <p>
+                    As you can see, all the paragraph tags have the background-color yellow but h1 tag contents arent affected
+                </p>
+            </div>
+<br>
+            <div class="class_selector">
+                <h1>class selector</h1><hr><br>
+                <p>
+                    In html and css, class is basically just a name given to the elements whose css we want to define separately without affecting other contents. class names can be given to just about any html element. p tag, h1 tag, div tag, you name it. Class name is given as an attribute. An attribute is any property that is put between the name of the element and the &gt; bracket like so: <br><br>
+                    consider a p tag; <br><br>
+                    &lt;p atrribute_name = "attribute value"&gt; text &lt;/p&gt; <br><br>
+                    or, in this case, <br><br>
+                    &lt;p class = "classname"&gt; text &lt;/p&gt; <br><br>
+                    example:
+                    <br><br>
+                    <div class="class">
+                        <p>
+                            this para is given background-color of "aqua" using class selector. The code for that is: <br><br>
+                            .classname{ <br>
+                                background-color:aqua;<br>
+                            }
+                        </p>
+                    </div>
+                </p>
+            </div>
+
+<br><br>
+            <div class="id_selector">
+                <h1>ID selector</h1><hr><br>
+                <p>
+                    In html and css, ID is basically just a name given to the elements whose css we want to define separately without affecting other contents. How is it different than class ?
+<br><br>
+                    <ol>
+                        <li>The same class names can be used for many elements. For example, i can have a paragraph, a heading and a table all with the same class name and define common styles for all of them. One ID name can be used only once. It makes the name more unique</li><br>
+                        <li>ID names are needed when u wanna use javascript or use links for a particular section in the same webpage</li>
+                    </ol>
+                    &lt;p class = "classname"&gt; text &lt;/p&gt; <br><br>
+                 
+                    <br><br>
+                    <div class="class">
+                        <p id="idname">
+                            this para is given background-color of "blue" and text-color "white" using id selector. The code for that is: <br><br>
+                            #idname{ <br>
+                                background-color:beige;<br>
+                            }
+                        </p>
+                    </div>
+                </p>
+            </div>
+        </p>
+        <br><br><hr><br><br>
+<h1>NOTE:</h1><br><br>
+        <div class="caution">
+            <p>
+                note that for class name selector we use '.' (dot before classname): <br><br>
+                 .classname{ <br>
+                                background-color:aqua;<br>
+                            }
+                        <br><br>
+                        and for idname we use '#' (hash or pound sign before idname): <br><br>
+                        #idname{ <br>
+                            background-color:beige;<br>
+                        }
+            </p>
+        </div>
+    </div>
+    <a href="#home"><div class="backHome">
+        <i class="fa-solid fa-house"></i>
+        </div>
+   </a>
+    <script src="https://kit.fontawesome.com/44bdc731e1.js" crossorigin="anonymous">
+</script>
+</body>
+</html>
