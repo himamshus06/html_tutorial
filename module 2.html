@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 2</title>
+    <style>
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+    color: black;
+}
+
+.text{
+    width: 70%;
+    background-color: blanchedalmond;
+    margin: 10% auto;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+h1{
+    margin: 20px;
+}
+
+ul li{
+    margin: 10px;
+}
+
+.backHome{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: black;
+    padding: 2rem;
+    border-radius: 50%;}
+
+    header {
+  background-color: blanchedalmond;
+  
+  padding: 20px 0;
+  text-align: center;
+  border-radius: 20px;
+}
+
+header h1 {
+  margin: 0;
+}
+
+/* Main Content */
+main {
+  padding: 20px;
+  border-radius: 20px;
+}
+
+section {
+  background: white;
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid blanchedalmond;
+ 
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+
+
+
+pre {
+  background: blanchedalmond;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 20px;  
+  overflow-x: auto;
+}
+
+
+.explanation{
+    width: 70%;
+    margin: auto;
+    border-radius: 20px;
+}
+    </style>
+</head>
+<body>
+    <div class="text" id="home">
+        
+        <h1>Formatting text</h1><br><br>
+        <p>
+            Some things to keep in mind while coding normal text; more like best practises
+        </p>
+<hr><br><br>
+        <ul>
+            <li>Always put normal text in paragraph tags (&lt;p&gt; text &lt;/p&gt;)</li>
+            <li>Always put headings in heading tags (&lt;h1&gt; heading &lt;/h1&gt;)
+                .You can use h1-h6 (h1 is biggest) as you please
+            </li>
+            <li>bold- <br><br> &lt;b&gt; bold text &lt;/b&gt;  (output: <b>bold text</b>)</li>
+            <li>italic- <br><br>&lt;i&gt; italic text &lt;/i&gt;  (output: <i>italic text</i>)</li>
+            <li>strike- <br><br>&lt;strike&gt; strike text &lt;/strike&gt;  (output: <strike>bold text</strike>)</li>
+            <li>Pro tip: (Used by even the most advanced developers) <br><br>Dont hesitate to ask google questions like:
+            <ul>
+                <li>how to increase font size</li>
+                <li>how to bold text in html</li>
+                <li>how to align text to center</li>
+            </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="text">
+        <h1>
+            CSS formatting
+        </h1>
+        <br><br>
+        <p>To format in css youll need to learn basics of css. Find it <a href="css.html" target="0">here</a></p><hr><br><br>
+
+        <p>
+            Now that you've learnt css basics, Lets get to formatting with CSS
+        </p>
+    </div>
+
+
+    <div class="explanation">
+        <div class="text">
+            <p>
+                <h2>CSS Text, Fonts, Margins, Padding, and Borders</h2><br><br>
+    
+    <h3>CSS Text</h3><hr><br><br>
+    <p>CSS text properties allow you to style and control the appearance of text.</p>
+    <br><br>
+    <h4>Common Properties:</h4>
+    <ul>
+      <li><strong>color:</strong> Sets the color of the text.</li>
+      <li><strong>text-align:</strong> Aligns the text (left, right, center, justify).</li>
+      <li><strong>text-decoration:</strong> Adds decoration (underline, overline, line-through, none).</li>
+      <li><strong>line-height:</strong> Sets the height of lines.</li>
+      <li><strong>letter-spacing:</strong> Adjusts space between letters.</li>
+      <li><strong>text-transform:</strong> Controls text capitalization (uppercase, lowercase, capitalize).</li>
+    </ul>
+    
+   <br><br> <h3>CSS Fonts</h3><hr><br><br>
+    <p>CSS font properties define the font type, size, weight, style, and more.</p>
+    
+    <h4>Common Properties:</h4>
+    <ul>
+      <li><strong>font-family:</strong> Specifies the font type (e.g., Arial, "Times New Roman").</li>
+      <li><strong>font-size:</strong> Sets the font size (e.g., px, em, %, rem).</li>
+      <li><strong>font-weight:</strong> Specifies font thickness (e.g., normal, bold, 100-900).</li>
+      <li><strong>font-style:</strong> Applies styles like italic or normal.</li>
+      <li><strong>font-variant:</strong> Enables small-caps text.</li>
+    </ul>
+    
+    <br><br> <h3>CSS Margin</h3><hr><br><br>
+    <p>The margin is the space outside the border of an element.</p>
+    <h4>Syntax:</h4>
+    <ul>
+      <li><strong>margin:</strong> value; (applies the same margin on all sides)</li>
+      <li><strong>margin:</strong> top right bottom left; (applies specific values for each side)</li>
+    </ul>
+    
+    <br><br>  <h3>CSS Padding</h3><hr><br><br>
+    <p>The padding is the space between the content and the border of an element.</p>
+    <h4>Syntax:</h4>
+    <ul>
+      <li><strong>padding:</strong> value; (applies the same padding on all sides)</li>
+      <li><strong>padding:</strong> top right bottom left; (applies specific values for each side)</li>
+    </ul>
+    
+    <br><br> <h3>CSS Border</h3><hr><br><br>
+    <p>The border is the line around an element's padding (or content if padding isn't defined).</p>
+    <h4>Syntax:</h4>
+    <ul>
+      <li><strong>border:</strong> width style color;</li>
+      <ul>
+        <li><strong>width:</strong> Thickness of the border (e.g., 1px, 2px).</li>
+        <li><strong>style:</strong> Style of the border (solid, dashed, dotted, etc.).</li>
+        <li><strong>color:</strong> Border color.</li>
+      </ul>
+    </ul>
+           </p>
+        </div>
+        <header>
+            <h1>CSS Properties Explanation</h1>
+          </header>
+          <main>
+            <section>
+              <h2>1. CSS Text</h2>
+              <p>CSS text properties allow you to style and control the appearance of text.</p>
+              <pre><code>
+        color: red;
+        text-align: center;
+        text-decoration: underline;
+        line-height: 1.5;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+              </code></pre>
+            </section>
+            <section>
+              <h2>2. CSS Fonts</h2>
+              <p>CSS font properties define the font type, size, weight, style, and more.</p>
+              <pre><code>
+        font-family: "Arial", sans-serif;
+        font-size: 16px;
+        font-weight: bold;
+        font-style: italic;
+        font-variant: small-caps;
+              </code></pre>
+            </section>
+            <section>
+              <h2>3. CSS Margin</h2>
+              <p>The margin is the space outside the border of an element.</p>
+              <pre><code>
+        margin: 20px;
+        margin: 10px 15px 20px 25px;
+              </code></pre>
+            </section>
+            <section>
+              <h2>4. CSS Padding</h2>
+              <p>The padding is the space between the content and the border of an element.</p>
+              <pre><code>
+        padding: 10px;
+        padding: 5px 10px 15px 20px;
+              </code></pre>
+            </section>
+            <section>
+              <h2>5. CSS Border</h2>
+              <p>The border is the line around an element's padding.</p>
+              <pre><code>
+        border: 2px solid black;
+        border-width: 2px;
+        border-style: dashed;
+        border-color: red;
+              </code></pre>
+            </section>
+          </main>
+          
+    </div>
+    <a href="#home"><div class="backHome">
+        <i class="fa-solid fa-house"></i>
+        </div>
+   </a>
+    <script src="https://kit.fontawesome.com/44bdc731e1.js" crossorigin="anonymous">
+</script>
+</body>
+</html>
